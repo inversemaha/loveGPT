@@ -1,0 +1,523 @@
+/*@font-face {
+    font-family: solaiman_lipi;
+    src: url('SolaimanLipi.ttf');
+}*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body, p, h1, h2, h3, h4, h5, h6, li, a, li a {
+
+    /*    font-family: solaiman_lipi, serif !important;*/
+    /*  font-family: 'Hind Siliguri', sans-serif;*/
+    /*font-family: 'Tiro Bangla', serif;*/
+    font-family: 'Anek Bangla', sans-serif;
+
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(3.25rem + 2px);
+}
+
+.select2-container--default .select2-selection--single {
+    height: 47px !important;
+    padding-top: 10px;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+#slider {
+    background-color: #f8f8f8;
+    margin-top: 0px;
+
+}
+
+.panel-group p {
+    color: #2a2a29;
+}
+
+.panel ul li {
+    color: #4c4b4b;
+}
+
+p {
+    font-size: 25px !important;
+    line-height: 35px;
+    color: #4c4c4c;
+}
+
+.header.h-transparent2 .navbar.navbar-light ul.navbar-nav > li > a {
+    color: #2E97D2 !important;
+    font-size: 17px;
+}
+
+.post-social-icons {
+
+    color: #2E97D2;
+
+}
+
+#rules {
+    padding-top: 250px;
+}
+
+.form-control {
+    font-size: 16px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section-title, .column-title {
+    position: relative;
+    padding-bottom: 10px !important;
+    margin-bottom: 0px !important;
+    padding-top: 25px;
+}
+
+.apply-section {
+    padding: 0px 0px 0px 0 !important;
+    position: relative;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+}
+
+li {
+    font-size: 20px;
+}
+
+#deadline {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2E97D2;
+}
+
+.panel-group p {
+    color: black;
+}
+
+.list-style {
+    list-style-type: square;
+}
+
+.ts-intro-item {
+    padding: 0px 0 0px;
+}
+
+.ts-contact {
+    padding: 5px !important;
+
+}
+
+.page-item.active .page-link {
+    z-index: 2;
+    color: #fff;
+    background-color: #2E97D2;
+    border-color: #2E97D2;
+}
+
+h2 {
+    color: #2E97D2 !important;
+}
+
+.header .navbar-light .navbar-toggler {
+    background: #2E97D2;
+    color: #fff;
+    border-color: #2E97D2;
+}
+
+.btn {
+    color: #fff;
+    background: #2E97D2 !important;
+    border: 1px solid #2E97D2 !important;
+    -webkit-box-shadow: 0px 20px 30px 0px rgb(0 0 0 / 15%);
+    box-shadow: 0px 20px 30px 0px rgb(0 0 0 / 15%);
+}
+
+.btn:hover {
+    color: #fff;
+    background: #90b9e7 !important;
+    border: 1px solid #2E97D2 !important;
+    -webkit-box-shadow: 0px 20px 30px 0px rgb(0 0 0 / 15%);
+    box-shadow: 0px 20px 30px 0px rgb(0 0 0 / 15%);
+}
+
+.section-title:after, .column-title:after {
+    background-image: none !important;
+    background: #2E97D2;
+    height: 2px;
+}
+
+a {
+    color: #2E97D2;
+}
+
+.form-bg {
+    background: #2E97D2;
+    border: 1px solid #2E97D2;
+    padding: 30px 40px;
+    border-radius: 3px;
+
+}
+
+.post-meta .post-meta-date {
+    color: #2E97D2;
+}
+
+#hashtag {
+    color: #2E97D2;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+
+}
+
+.header.h-transparent2 {
+    padding: 0px 0;
+}
+
+.ts-intro-item .single-intro-text {
+    min-height: 325px;
+}
+
+.ts-title {
+    font-size: 24px;
+    padding-top: 33px;
+    margin-bottom: -5px;
+}
+
+.copyright-area {
+    background: #f1f1f1;
+    padding-top: 30px;
+}
+
+.ts-speakers {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.ts-speaker {
+    border: 1px solid #e2e2e2;
+}
+
+.ts-title {
+    padding-top: 10px;
+}
+
+.navbarmiddle {
+    margin-left: 37% !important;
+}
+
+section, .section-padding {
+    padding: 40px 0;
+    position: relative;
+}
+
+.section-title, .column-title {
+
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.check {
+    margin-left: 20px
+}
+
+
+.form-check-label {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+    background: #2E97D2;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.question {
+    background: #2E97D2;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.question p {
+    padding-bottom: 0px;
+    padding-top: 12px;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn {
+    background: #2E97D2;
+    border: 1px solid #5497e5 !important;
+    width: 45%;
+}
+
+.btn-primary:hover {
+    background: #93b8e5;
+    border: 1px solid #5497e5;
+    width: 47%;
+}
+
+.form-control {
+    padding: 10px 10px;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #2E97D2 !important;
+}
+
+
+.desktop h1 {
+    margin-top: 180px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    padding: 0px 20px;
+}
+
+a {
+    color: #2E97D2;
+
+}
+
+.header.h-transparent2 .navbar.navbar-light ul.navbar-nav > li > a {
+    color: black !important;
+
+}
+
+.header .navbar-light .navbar-toggler {
+    background: #2E97D2;
+    color: #fff;
+    border-color: #2E97D2;
+}
+
+.panel ul li {
+    color: black;
+}
+
+.line {
+    font-weight: bold;
+}
+
+.header.h-transparent2 .navbar.navbar-light ul.navbar-nav > li > a {
+    color: #2E97D2 !important;
+}
+
+#p-status {
+    height: 220px;
+}
+
+#ad {
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    #rules {
+        padding-top: 30px;
+    }
+
+    .navbar-brand img {
+        margin-top: 5px !important;
+
+    }
+
+    p {
+        font-size: 20px !important;
+        color: #4c4c4c;
+    }
+
+    .header .navbar-light .navbar-toggler {
+        background: #2E97D2;
+        color: #fff;
+        border-color: #2E97D2;
+    }
+
+    .ts-intro-item {
+        padding: 0px 0 0px;
+    }
+
+    .intro-left-content {
+        margin-bottom: -9px !important;
+        margin-right: -15px;
+        margin-top: -10px;
+        margin-left: -14px;
+    }
+
+    .header.h-transparent2 button.navbar-toggler {
+
+        top: -40px;
+
+    }
+
+    #p-status {
+        height: 300px;
+    }
+
+    .navbar-brand img {
+        margin-top: 0px;
+        margin-bottom: -17px;
+    }
+
+    .section-title, .column-title {
+
+        padding-top: 20px;
+    }
+
+    .ts-speakers, section, .ts-intro-item {
+        padding: 10px 0;
+    }
+
+    .section-title, .column-title {
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 25px;
+    }
+
+    .question {
+        margin-left: 15px;
+        margin-bottom: 0px;
+        border-radius: 5px;
+    }
+
+    .header .navbar-light .navbar-toggler {
+        background: #2E97D2;
+        color: #fff;
+        border-color: #2E97D2;
+    }
+
+
+    .footer-logo {
+        height: 45px !important;
+        margin-left: -10px;
+    }
+
+    .intro-left-content {
+        margin-bottom: 0px;
+    }
+
+    #ad {
+        margin-top: 62px;
+        margin-bottom: 20px;
+    }
+}
+
+/*Slider Image CSS Start*/
+.carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-item {
+    min-height: 350px;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+    background-color: #09c;
+}
+
+.carousel-caption h3 {
+    padding: .5em;
+}
+
+.carousel .icon-container {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.carousel-caption button {
+    border-color: #00bfff;
+    margin-top: 1em;
+}
+
+
+.carousel-caption {
+    right: 0%;
+    bottom: 0px;
+    left: 0%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.card {
+    border: 1px solid #e7e1e1 !important;
+}
+
+.slider-img {
+    border-radius: 5px;
+}
+
+.carousel-item {
+    min-height: 158px;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-img {
+    min-height: 158px;
+}
+
+
+.slider-section {
+    padding: 100px 5px;
+}
+
+@media (max-width: 767px) {
+    .header.h-transparent2 button.navbar-toggler {
+        top: -25px;
+    }
+
+    .slider-section {
+        padding: 35px 5px;
+    }
+}
+
+/*Slider Image CSS End*/
+
