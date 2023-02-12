@@ -47,19 +47,18 @@ class Controller extends BaseController
         $news = News::orderBy('created_at', "ASC")->get();
         $photos = Photos::inRandomOrder()->get()->except(1);
 
-        $submit_data = SelfieSubmission::where('is_publish', true)->OrderBy('created_at', "DESC")->paginate(9);
+        $applicants=Applicants::orderBy('created_at', "ASC")->get();
+
         return view('common.home.index')
+            ->with('applicants', $applicants)
             ->with('sliders', $sliders)
             ->with('videos', $videos)
             ->with('videos1', $videos1)
             ->with('photos', $photos)
             ->with('news', $news)
-            ->with('submit_data', $submit_data)
             ->with("thumbnail", "/images/slider.png")
-            ->with("fb_title", "বিকাশ FAN-টাস্টিক বিশ্বকাপ।")
-            ->with("fb_sub_title", " বিশ্বজুড়ে বিশ্বকাপের আমেজ। কাতার কাঁপছে ফুটবল উম্মাদনায়। কাতারে অবস্থানরত বাংলাদেশি ফুটবল–ফ্যানদের জন্য দারুণ সুযোগ!
-                                  স্টেডিয়ামের ভেতর–বাইরে অথবা কাতারের বিভিন্ন জায়গা থেকে বাংলাদেশিদের পাঠানো বিশ্বকাপ উদযাপনের নানা মুহূর্তের ছবি বা শর্ট ভিডিও নিয়ে প্রথম আলো ডটকমের বিশেষ আয়োজন
-                                  ‘বিকাশ FAN-টাস্টিক বিশ্বকাপ।’ ");
+            ->with("fb_title", "")
+            ->with("fb_sub_title", "");
 
     }
 

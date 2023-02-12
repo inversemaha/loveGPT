@@ -29,11 +29,8 @@ Route::get('/login', [AuthController::class, 'login']);
 Route::any('/test', [AuthController::class, 'test']);
 
 Route::get('/', [Controller::class, 'home']);
-Route::get('/selfie-contest', [Controller::class, 'selfieContest']);
-Route::any('/selfie-contest/submit', [Controller::class, 'selfieContestSubmit']);
 
-Route::any('/vote', [Controller::class, 'selfieContestVote']);
-Route::any('/all-selfie-data', [Controller::class, 'selfieData']);
+
 
 Route::get('/photo-contest', [Controller::class, 'photoContest']);
 Route::post('/photo-contest/submit', [Controller::class, 'photoContestSubmit']);
