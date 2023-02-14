@@ -9,7 +9,6 @@ use App\Models\EntrepreneurApply;
 use App\Models\Institute;
 use App\Models\McqQuiz;
 use App\Models\McqQuizSubmission;
-use App\Models\News;
 use App\Models\SelfieSubmission;
 use App\Models\Setting;
 use App\Models\Subject;
@@ -43,7 +42,7 @@ class AdminController extends Controller
             $counter_start = ($_GET['page'] - 1) * $numbers + 1;
         }
 
-        return view('admin.application.show')
+        return view('admin.submission.show')
             ->with('start_number', $counter_start)
             ->with('results', $applications);
     }
@@ -68,21 +67,14 @@ class AdminController extends Controller
     {
 
 
-        $mcq=McqQuizSubmission::count();
-        $selfie=SelfieSubmission::count();
-        $question=McqQuiz::where('is_publish', true)->orderBy('created_at','DESC')->first();
-
-        return view('admin.dashboard.index')
-            ->with('mcq', $mcq)
-            ->with('selfie', $selfie)
-            ->with('question', $question);
+        return view('admin.dashboard.index');
     }
 
     public function applications()
     {
 
         $data = DB::table('entrepreneur_applies')->orderBy('id', 'DESC')->get();
-        return view('admin.application.show')
+        return view('admin.submission.show')
             ->with('results', $data);
     }
 
@@ -90,7 +82,7 @@ class AdminController extends Controller
     {
 
         $data = DB::table('entrepreneur_applies')->where('id', $id)->first();
-        return view('admin.application.details')
+        return view('admin.submission.details')
             ->with('result', $data);
     }
 
@@ -148,6 +140,12 @@ class AdminController extends Controller
         } catch (\Exception $exception) {
             return back()->with('failed', getErrorMessage($exception->getMessage()));
         }
+    }
+
+    public function ssubmission()
+    {
+        $submissions = Applicants::orderBy("created_at", "DESC")->paginate(25);
+        return view('admin.submission.show')->with('results', $submissions);
     }
 
     public function logout()

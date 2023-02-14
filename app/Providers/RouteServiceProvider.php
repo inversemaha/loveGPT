@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 class RouteServiceProvider extends ServiceProvider
 {
     /**
-     * The path to the "home" route for your application.
+     * The path to the "home" route for your submission.
      *
      * This is used by Laravel authentication to redirect users after login.
      *
@@ -20,7 +20,7 @@ class RouteServiceProvider extends ServiceProvider
     public const HOME = '/home';
 
     /**
-     * The controller namespace for the application.
+     * The controller namespace for the submission.
      *
      * When present, controller route declarations will automatically be prefixed with this namespace.
      *
@@ -50,7 +50,7 @@ class RouteServiceProvider extends ServiceProvider
     }
 
     /**
-     * Configure the rate limiters for the application.
+     * Configure the rate limiters for the submission.
      *
      * @return void
      */

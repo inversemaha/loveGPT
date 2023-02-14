@@ -105,7 +105,7 @@ class ApplicantsController extends Controller
     {
         $is_exist = EntrepreneurApply::where('phone_number', Auth::guard('applicant')->user()->phone)
             ->get();
-        return view("common.applicant.application")->with('is_exist', $is_exist);
+        return view("common.applicant.submission")->with('is_exist', $is_exist);
     }
 
     public function logout()

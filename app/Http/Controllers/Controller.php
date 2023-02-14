@@ -47,7 +47,7 @@ class Controller extends BaseController
         $news = News::orderBy('created_at', "ASC")->get();
         $photos = Photos::inRandomOrder()->get()->except(1);
 
-        $applicants=Applicants::orderBy('created_at', "ASC")->get();
+        $applicants = Applicants::orderBy('created_at', "ASC")->get();
 
         return view('common.home.index')
             ->with('applicants', $applicants)
@@ -60,6 +60,20 @@ class Controller extends BaseController
             ->with("fb_title", "")
             ->with("fb_sub_title", "");
 
+    }
+
+    protected function questionSave(Request $request)
+    {
+
+        try {
+            Applicants::create($request->except('_token'));
+
+            Alert::success('সাকসেস', 'আপনার প্রশ্নটি গ্রহণ করা হয়েছে। উত্তর জানতে প্রথম আলো ওয়েবসাইট এবং ফেসবুক পেজে চোখ রাখুন। ');
+            return back();
+        } catch (\Exception $exception) {
+            Alert::error('Error', $exception->getMessage());
+            return $exception->getMessage();
+        }
     }
 
     public function selfieContestSubmit(Request $request)

@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
+| Here is where you can register web routes for your submission. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
@@ -29,6 +29,7 @@ Route::get('/login', [AuthController::class, 'login']);
 Route::any('/test', [AuthController::class, 'test']);
 
 Route::get('/', [Controller::class, 'home']);
+Route::any('/question-save', [Controller::class, 'questionSave']);
 
 
 
@@ -74,7 +75,7 @@ Route::post('/applicant/sent-password', [ApplicantsController::class, 'sentPassw
 Route::group(['middleware' => 'applicant'], function () {
 
     Route::any('/apply', [Controller::class, 'apply']);
-    Route::get('/applicant/application', [ApplicantsController::class, 'applicantApplication']);
+    Route::get('/applicant/submission', [ApplicantsController::class, 'applicantApplication']);
     Route::get('/applicant/logout', [ApplicantsController::class, 'logout']);
 });
 
@@ -138,30 +139,12 @@ Route::group(['prefix' => "admin", 'middleware' => ['admin']], function () {
 
 
 
-
-
-    Route::get('/manage-photo', [SelfieSubmissionController::class, 'managePhoto']);
-    Route::post('/manage-photo/store', [SelfieSubmissionController::class, 'managePhotoStore']);
-    Route::any('/manage-photo/edit/{id}', [SelfieSubmissionController::class, 'managePhotoUpdate']);
-    Route::post('/manage-photo/update', [SelfieSubmissionController::class, 'managePhotoUpdateStore']);
-
-    Route::get('/manage-photo/status-update/{id}/{status}', [SelfieSubmissionController::class, 'managePhotoStatus']);
-
-
-    Route::get('/selfie-submission', [SelfieSubmissionController::class, 'index']);
-    Route::get('/selfie-submission/excel-download', [SelfieSubmissionController::class, 'excelDownload']);
-    Route::get('/selfie-submission/details/{id}', [SelfieSubmissionController::class, 'selfieDetails']);
-    Route::get('/photo-submission', [SelfieSubmissionController::class, 'photoSubmission']);
-    Route::get('/photo-submission/status-update/{id}/{status}', [SelfieSubmissionController::class, 'photoSubmissionStatusUpdate']);
-
-    Route::get('/selfie/status-update/{id}/{status}', [SelfieSubmissionController::class, 'statusUpdate']);
-
+    Route::get('/submission', [AdminController::class, 'ssubmission']);
     Route::get('/logout', [AdminController::class, 'logout']);
 });
 
 
 Route::get('/migrate', function () {
-
 
     Artisan::call('migrate');
 });

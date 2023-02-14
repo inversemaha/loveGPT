@@ -49,9 +49,9 @@
 
 
                 <li>
-                    <a href="/admin/selfie-submission" class=" waves-effect">
+                    <a href="/admin/submission" class=" waves-effect">
                         <i class="ri-tools-fill"></i>
-                        <span>Images/video Submission</span>
+                        <span>Submission</span>
                     </a>
                 </li>
 

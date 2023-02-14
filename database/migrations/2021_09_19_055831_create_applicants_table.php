@@ -21,6 +21,7 @@ class CreateApplicantsTable extends Migration
             $table->string("question")->nullable();
             $table->longText("answer")->nullable();
             $table->string("answer_by")->nullable();
+            $table->string("profile_pic")->nullable();
             $table->boolean("is_short_listed")->default(false);
             $table->timestamps();
         });

@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Event;
 class EventServiceProvider extends ServiceProvider
 {
     /**
-     * The event listener mappings for the application.
+     * The event listener mappings for the submission.
      *
      * @var array
      */
@@ -21,7 +21,7 @@ class EventServiceProvider extends ServiceProvider
     ];
 
     /**
-     * Register any events for your application.
+     * Register any events for your submission.
      *
      * @return void
      */

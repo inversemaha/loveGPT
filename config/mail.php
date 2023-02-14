@@ -8,7 +8,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This option controls the default mailer that is used to send any email
-    | messages sent by your application. Alternative mailers may be setup
+    | messages sent by your submission. Alternative mailers may be setup
     | and used as needed; however, this mailer will be used by default.
     |
     */
@@ -20,9 +20,9 @@ return [
     | Mailer Configurations
     |--------------------------------------------------------------------------
     |
-    | Here you may configure all of the mailers used by your application plus
+    | Here you may configure all of the mailers used by your submission plus
     | their respective settings. Several examples have been configured for
-    | you and you are free to add your own as your application requires.
+    | you and you are free to add your own as your submission requires.
     |
     | Laravel supports a variety of mail "transport" drivers to be used while
     | sending an e-mail. You will specify which one you are using for your
@@ -85,9 +85,9 @@ return [
     | Global "From" Address
     |--------------------------------------------------------------------------
     |
-    | You may wish for all e-mails sent by your application to be sent from
+    | You may wish for all e-mails sent by your submission to be sent from
     | the same address. Here, you may specify a name and address that is
-    | used globally for all e-mails that are sent by your application.
+    | used globally for all e-mails that are sent by your submission.
     |
     */
 
